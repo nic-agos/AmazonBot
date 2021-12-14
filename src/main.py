@@ -9,6 +9,7 @@ import parseConfig
 if __name__ == '__main__':
     getToken = parseConfig.ParseJson()
     botToken = getToken.getConfig()
+    print("Token: ", botToken)
     theBot = bot.RespondToCommands(botToken)
     theBot.initializeBot()
 
